@@ -8,22 +8,28 @@ const arrayOne = [1, 2, 3, 4, 5];
 const arrayTwo = ['a', 'b', 'c', 'd', 'e'];
 let newArray = [];
 
-for (let i = 0; i < arrayOne.length; i++) {
-    
-    arrayOne.forEach((elemento, index) => {
-        if (index == i) {
-            newArray.push(elemento);
-        }
-    })
+sumArray(arrayOne, arrayTwo);
 
-    arrayTwo.forEach((elemento, index) => {
-        if (index == i) {
-            newArray.push(elemento);
-        }
-    })
-    //console.log(myArray);
-    //console.log(myArrayTwo);
+function sumArray(array1, array2) {
+    for (let i = 0; i < array1.length; i++) {
+
+        array1.forEach((elemento, index) => {
+            if (index == i) {
+                newArray.push(elemento);
+            }
+        })
+
+        array2.forEach((elemento, index) => {
+            if (index == i) {
+                newArray.push(elemento);
+            }
+        })
+        //console.log(myArray);
+        //console.log(myArrayTwo);
+    }
+    console.log(newArray);
 }
-console.log(newArray);
+
+
 
 
